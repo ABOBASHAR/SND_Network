@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 90vh;
+  box-sizing: border-box;
+  color: #333;
+  position: relative;
+  background-image: url('../img/2.jpg');
+  background-position: top center;
+  background-size: cover;
+  /* overflow: hidden; */
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgba(56, 189, 248, 0.9);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-right: 10vh;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3.5rem;
+  padding-right: 15vh;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #090063;
+}
+/* ....... */
+
+.logo {
+  max-width: 100px; /* ضبط الحجم الأقصى للصورة */
+  height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+  padding-left: 3vh;
+}
+
+.developers-container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.developers-container h1 {
+  font-size: 36px;
+  color: #090063;
+  margin-bottom: 2rem;
+}
+
+.developers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.developer-card {
+  background: white;
+  border-radius: 12px;
+  padding: 0.1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.developer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.developer-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.developer-card h2 {
+  font-size: 20px;
+  color: #090063;
+  margin-bottom: 0.5rem;
+}
+
+.developer-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+footer {
+  margin-top: -2.1rem;
+  padding-top: 0rem;
+  text-align: center;
+  color: black;
+}
+.footer .highlight {
+  color: #090063;
+  font-weight: bold;
+}

@@ -1,0 +1,31 @@
+.password-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    color: #333;
+    /* background-color: #fff; */
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    pointer-events: none;
+    top: 62.5%;
+    left: 120%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    
+    width: 20px;
+    height: 20px;
+}
+.password-container .toggle-password svg {
+    position: fixed;
+    bottom: 27%;
+    right: 50%;
+    width: 100%;
+    height: 100%;
+    fill: #888;
+    pointer-events: auto;
+}
+.password-container .toggle-password:hover svg {
+    fill: #333;
+}

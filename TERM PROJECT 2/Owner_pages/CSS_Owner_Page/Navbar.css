@@ -1,0 +1,39 @@
+.navbar {
+    width: 100%;
+    background-color: rgba(56, 189, 248, 0.9);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-right: 10vh;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 3.5rem;
+    padding-right: 15vh;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #6a11cb;
+  }
+  /* ....... */
+  
+  .logo {
+    max-width: 100px; /* ضبط الحجم الأقصى للصورة */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    padding-left: 3vh;
+  }

@@ -1,0 +1,281 @@
+/* إعدادات الصفحة */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-image: url('../img/2.jpg');
+  background-position: top center;
+  user-select: none; /* المتصفحات الحديثة */
+  -webkit-user-drag: none; /* منع سحب الصور في كروم وسفاري */
+}
+
+/* body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../img/2.jpg');
+  background-position: top center;
+  background-size: cover;
+  z-index: -1;
+} */
+
+.navbar {
+  width: 100%;
+  background-color: rgba(56, 189, 248, 0.9);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-right: 10vh;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3.5rem;
+  padding-right: 7.5vh;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #01348c;
+}
+/* ....... */
+
+.logo {
+  max-width: 100px; /* ضبط الحجم الأقصى للصورة */
+  height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+  padding-left: 10.5vh;
+}
+/* الحاوية الأساسية */
+.login-container {
+  width: 100%;
+  max-width: 700px;
+  padding-top: 5rem;
+  box-sizing: border-box; /* ضمان أن الحقول تتناسب داخل الحاوية */
+}
+
+/* تعديل الحاوية للنموذج */
+.login-box {
+  display: flex;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+  flex-direction: column;
+  max-width: 100%; /* ضمان أن العرض لا يتجاوز الحاوية */
+  box-sizing: border-box; /* ضمان احتساب العرض الداخلي بشكل صحيح */
+}
+
+/* قسم الصورة */
+.image-section {
+  width: 100%;
+  display: none;
+  padding: 1rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: fill;
+  -webkit-user-drag: none;
+}
+.log1h {
+  display: flex;
+  justify-content: space-between; /* يوزع العناصر بحيث تكون الصورة على اليمين والنص على اليسار */
+  align-items: center; /* يحاذي العناصر عموديًا في المنتصف */
+  width: 100%; /* تأكد من أن الحاوية تمتد بالكامل */
+}
+
+/* قسم النموذج */
+.form-section {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; /* ضمان أن العرض لا يتجاوز الحاوية */
+}
+
+.login-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #4a5568;
+  margin-bottom: 1.25rem;
+}
+
+.brand-name {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #01348c;
+  text-align: center;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+/* تنسيق الحقول */
+.input-group {
+  margin-bottom: 1.5rem; /* زيادة المسافة بين الحقول */
+}
+
+.input-group label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #2d3748;
+  margin-bottom: 0.9rem; /* زيادة المسافة بين النص والحقل */
+}
+
+.input-group input {
+  width: 100%; /* يجعل الحقل يملأ العرض داخل الحاوية */
+  max-width: 100%; /* تحديد أقصى عرض للحقل داخل الحاوية */
+  padding: 0.8rem;
+  border-radius: 0.375rem;
+  border: 1.5px solid #e2e8f0;
+  font-size: 0.9rem; /* زيادة حجم الخط لتسهيل القراءة */
+  color: #2d3748;
+  outline: none;
+  box-sizing: border-box; /* ضمان احتساب الحقل بشكل صحيح داخل الحاوية */
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6); /* تأثير التوهج */
+}
+
+/* تذكرني وكلمة المرور */
+.remember-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+}
+
+.remember input {
+  margin-right: 0.5rem;
+}
+/* .remember input:hover {
+  color: #01348c;
+} */
+.forgot-password {
+  padding-right: 10.05rem;
+  color: #01348c;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+/* زر تسجيل الدخول */
+.login-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #01348c;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #2575fc;
+}
+
+/* Divider بين الأقسام */
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.divider span {
+  font-size: 1rem;
+  color: #2d3748;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 0 1rem;
+}
+
+/* رابط التسجيل */
+.register-link {
+  text-align: center;
+  color: #2d3748;
+}
+
+.register-link a {
+  color: #01348c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* الأنيميشن لتأثير الفتح */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* خاصية لعرض الصورة في الشاشات الكبيرة */
+@media (min-width: 768px) {
+  .image-section {
+    display: block;
+    width: 50%; /* عرض الصورة نصف الصفحة */
+  }
+
+  .form-section {
+    width: 50%;
+  }
+
+  .login-box {
+    flex-direction: row; /* عرض النموذج بشكل أفقي */
+  }
+}
+/* تعديل الفوتر */
+footer {
+  margin-top: -1rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: white;
+}
+.footer .highlight {
+  color: #01348c;
+  font-weight: bold;
+}
