@@ -58,7 +58,7 @@ if(validate_customer_dataI($fname,$email, $package, $password, $errors)){
     <nav class="navbar">
       <img src="../img/4.png" alt="SND NET Logo" class="logo" />
       <div class="nav-links">
-        <a href="../html/auth-login.php" class="nav-logo">Home</a>
+        <a href="../../auth-login.php" class="nav-logo">Home</a>
         <a href="../html/program.html" class="nav-item">Program</a>
         <a href="../html/offers.php" class="nav-item">Offers</a>
         <a href="../html/developers.html" class="nav-item">Developers</a>
